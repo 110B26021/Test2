@@ -1,0 +1,51 @@
+interface Area {
+	void area();
+}
+
+class Circle extends Shape implements Surfacing {
+	private double r;
+
+	public Circle(double r) {
+		this.r = r;
+	}
+
+	public void area() {
+		System.out.println("圓形面積: " + 3.1416 * r * r);
+	}
+}
+
+}
+
+class Rectangle implements IShape {
+
+	// 屬性(Property)
+	width:number;height:number;
+
+	// 建構函式(Constructor)
+	constructor(w: number, h: number) {
+		private double width = w;
+        private double height = h;
+    }
+
+	// 函式(Function)
+	getArea() {
+        return private double width * private double height;
+    }
+}
+
+class Triangle implements IShape {
+
+	// 屬性(Property)
+	width:number;height:number;
+
+	// 建構函式(Constructor)
+	constructor(w: number, h: number) {
+		 private double width = w;
+		 private double height = h;
+    }
+
+	// 函式(Function)
+	getArea() {
+        return ( private double width * private double height / 2 );
+    }
+}
