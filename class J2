@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class J2.java
+{
+
+	public static void main(String args[]) throws IOException {
+		FileWriter fw = new FileWriter("c:\\Java\\random.txt");
+		BufferedWriter bfw = new BufferedWriter(fw);
+
+		for (int i = 1; i <= 99999; i++) {
+			bfw.write(Double.toString(Math.random()));
+			bfw.newLine();
+		}
+		bfw.flush();
+		fw.close();
+	}
+}
